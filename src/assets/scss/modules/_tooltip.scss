@@ -1,0 +1,26 @@
+/**
+ * Tool tip
+ * .tooltip
+ */
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip-secret {
+    background: rgba(85, 85, 85, 0.8);
+    color: $COLOR_PLAIN;
+    text-decoration: none;
+    position: absolute;
+    top: calc(100% - 5px);
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: top $BASE_TEMPO $EASE_PRIMARY,
+                opacity $BASE_TEMPO $EASE_PRIMARY;
+}
+
+.tooltip:hover .tooltip-secret {
+    top: 100%;
+    opacity: 1;
+}
