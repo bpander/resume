@@ -1,6 +1,5 @@
-/* ---------------------------------------------------------------------
- Modern Styles
------------------------------------------------------------------------- */
-@import "base/_reset";
-@import "base/_elements";
+@import '_screen';
 
+@media only screen and (min-width: $VIEWPORT_WIDTH_MD), only print {
+    @import '_screen_medium';
+}
