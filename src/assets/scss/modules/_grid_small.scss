@@ -38,3 +38,11 @@ $grid-halfGutter: $grid-GUTTER_WIDTH / 2;
         margin-left: $width;
     }
 }
+
+.mix-grid-col_reorder1 {
+    order: 1;
+}
+
+.mix-grid-col_reorder2 {
+    order: 2;
+}
