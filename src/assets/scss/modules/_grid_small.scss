@@ -1,0 +1,40 @@
+/**
+ * Grid
+ * .grid
+ */
+
+$grid-GUTTER_WIDTH: 20px;
+$grid-COLUMN_COUNT: 12;
+$grid-halfGutter: $grid-GUTTER_WIDTH / 2;
+
+.grid {
+    display: flex;
+    margin: 0 #{$grid-halfGutter * -1} 0 #{$grid-halfGutter * -1};
+}
+
+.grid-col {
+    flex: 1;
+    padding: 0 $grid-halfGutter 0 $grid-halfGutter;
+}
+
+// Yields
+//     .grid-col_1of12 {
+//         flex-basis: 8.3333333333%;
+//         max-width: 8.3333333333%;
+//     }
+//     
+//     .mix-grid-col_prefix1 {
+//         margin-left: 8.3333333333%;
+//     }
+// for all 12 column sizes
+@for $i from 1 through $grid-COLUMN_COUNT {
+    $width: #{$i / $grid-COLUMN_COUNT * 100}%;
+    .grid-col_#{$i}of#{$grid-COLUMN_COUNT} {
+        flex-basis: $width;
+        max-width: $width;
+    }
+
+    .mix-grid-col_prefix#{$i} {
+        margin-left: $width;
+    }
+}
