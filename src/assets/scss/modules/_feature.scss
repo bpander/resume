@@ -1,0 +1,14 @@
+/**
+ * Feature - A container object for featured content
+ * .feature
+ */
+
+.feature {}
+
+.feature-hd {
+    @include vr(2);
+}
+
+.feature-bd {
+
+}

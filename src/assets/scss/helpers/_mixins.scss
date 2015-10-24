@@ -4,3 +4,7 @@
     font-size: ($rems * $baseSizeUnitless) + px;
     font-size: $rems + rem;
 }
+
+@mixin vr($factor: 1) {
+    margin-bottom: $VERTICAL_RHYTHM_BASE * $factor;
+}
