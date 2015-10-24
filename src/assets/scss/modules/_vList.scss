@@ -1,0 +1,20 @@
+/**
+ * Vertical List - A list of items oriented vertically
+ * .vList
+ */
+
+.vList {}
+
+@for $i from 1 to 10 {
+    .vList_#{$i}x > * {
+        @include vr($i);
+    }
+}
+
+.vList > *:last-child {
+    margin-bottom: 0;
+}
+
+.mix_vList_bullet {
+
+}
