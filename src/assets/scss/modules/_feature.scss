@@ -3,7 +3,9 @@
  * .feature
  */
 
-.feature {}
+.feature {
+    @include vr(8);
+}
 
 .feature-hd {
     @include vr(2);

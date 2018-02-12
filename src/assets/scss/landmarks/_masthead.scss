@@ -6,6 +6,7 @@
     background: $COLOR_ACCENT;
     text-align: center;
     padding: 40px 10px 20px;
+    @include vr(10);
 }
 
 .masthead-hd {

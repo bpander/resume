@@ -45,7 +45,8 @@ $tooltip-COLOR_BACKGROUND: rgba(85, 85, 85, 0.8);
     transform: translateX(-50%);
 }
 
-.tooltip:hover .tooltip-secret {
+.tooltip:hover .tooltip-secret,
+.tooltip:focus .tooltip-secret {
     top: 100%;
     opacity: 1;
     visibility: visible;
