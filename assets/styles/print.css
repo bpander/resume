@@ -1,45 +1,35 @@
 /* ---------------------------------------------------------------------
  Print Styles
 ------------------------------------------------------------------------ */
-@import 'helpers/_vars';
-@import 'helpers/_mixins';
-
 .no-print {
-  display: none;
-}
+  display: none; }
 
 .print-only {
-  display: block;
-}
+  display: block; }
 
 .masthead {
   padding-top: 0;
-  @include vr(4);
-}
+  margin-bottom: 16px; }
 
 .masthead-hd {
-  @include vr(2);
-}
+  margin-bottom: 8px; }
 
 .masthead-subhd {
-  @include vr(3);
-}
+  margin-bottom: 12px; }
 
 .hdg_1 {
-  @include remify(1.5);
-}
+  font-size: 24px;
+  font-size: 1.5rem; }
 
 .hdg_2 {
-  @include remify(1.25);
-}
+  font-size: 20px;
+  font-size: 1.25rem; }
 
 .contact {
   display: inline-block;
   text-align: left;
-  line-height: 1.2;
-}
+  line-height: 1.2; }
 
 .contact .icon {
   display: inline-block;
-  vertical-align: middle;
-}
+  vertical-align: middle; }

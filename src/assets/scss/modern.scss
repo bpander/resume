@@ -1,9 +1,0 @@
-@import '_screen';
-
-@media only screen and (min-width: $VIEWPORT_WIDTH_SM), only print {
-    @import '_screen_small';
-}
-
-@media only screen and (min-width: $VIEWPORT_WIDTH_MD), only print {
-    @import '_screen_medium';
-}

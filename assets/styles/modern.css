@@ -1,0 +1,403 @@
+/* ---------------------------------------------------------------------
+RESET CSS (thanks Eric Meyer)
+------------------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+:focus {
+  outline: 0; }
+
+html {
+  overflow-y: scroll;
+  /* Always show a vertical scrollbar, even when there is no scrolling */ }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* ---------------------------------------------------------------------
+ HTML5 Element Reset
+------------------------------------------------------------------------ */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block; }
+
+audio, canvas, video, progress, picture {
+  display: inline-block; }
+
+template {
+  display: none; }
+
+/* ---------------------------------------------------------------------
+ Form Reset Styles
+------------------------------------------------------------------------ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none; }
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.print-only {
+  display: none; }
+
+/* Hide visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+body {
+  font-family: "Gentium Book Basic", serif;
+  color: #333333; }
+
+a {
+  color: #df5249;
+  text-decoration: none; }
+
+a:focus,
+a:hover {
+  text-decoration: underline; }
+
+/**
+ * Masthead
+ */
+.masthead {
+  background: #df5249;
+  text-align: center;
+  padding: 40px 10px 20px;
+  margin-bottom: 40px; }
+
+.masthead-hd {
+  display: block;
+  margin-bottom: 16px; }
+
+.masthead-subhd {
+  display: block;
+  margin-bottom: 32px; }
+
+/**
+ * Feature - A container object for featured content
+ * .feature
+ */
+.feature {
+  margin-bottom: 32px; }
+
+.feature-hd {
+  margin-bottom: 8px; }
+
+/**
+ * Horizontal List
+ * .hList
+ */
+.hList {
+  display: block;
+  font-size: 0; }
+
+.hList > * {
+  display: inline-block;
+  font-size: 16px;
+  font-size: 1rem; }
+
+.hList_1x > * + * {
+  padding-left: 5px; }
+
+.hList_2x > * + * {
+  padding-left: 10px; }
+
+/**
+ * Heading
+ * .hdg
+ */
+.hdg {
+  font-family: "Roboto", sans-serif;
+  color: #df5249; }
+
+.hdg_1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-size: 2.25rem; }
+
+.hdg_2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-size: 1.5rem; }
+
+.mix-hdg_inverted {
+  color: #ffffff; }
+
+.icon_sm {
+  height: 24px; }
+
+.icon_xs {
+  height: 12px; }
+
+/**
+ * Tool tip
+ * .tooltip
+ */
+.tooltip {
+  position: relative; }
+
+.tooltip-secret {
+  background-color: rgba(85, 85, 85, 0.8);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-top: 6px;
+  position: absolute;
+  top: calc(100% - 5px);
+  left: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%);
+  transition: top 100ms ease-out, opacity 100ms ease-out, visibility 0ms linear 100ms;
+  white-space: nowrap; }
+
+.tooltip-secret:before {
+  content: '';
+  display: block;
+  border-color: transparent;
+  border-style: solid;
+  border-bottom-color: rgba(85, 85, 85, 0.8);
+  border-width: 0 6px 6px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.tooltip:hover .tooltip-secret,
+.tooltip:focus .tooltip-secret {
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0ms; }
+
+/**
+ * Text
+ * .txt
+ */
+.txt {
+  line-height: 1.2; }
+
+.txt_bold {
+  font-weight: 700; }
+
+/**
+ * Vertical List - A list of items oriented vertically
+ * .vList
+ */
+.vList_1x > * {
+  margin-bottom: 4px; }
+
+.vList_2x > * {
+  margin-bottom: 8px; }
+
+.vList_3x > * {
+  margin-bottom: 12px; }
+
+.vList_4x > * {
+  margin-bottom: 16px; }
+
+.vList_5x > * {
+  margin-bottom: 20px; }
+
+.vList_6x > * {
+  margin-bottom: 24px; }
+
+.vList_7x > * {
+  margin-bottom: 28px; }
+
+.vList_8x > * {
+  margin-bottom: 32px; }
+
+.vList_9x > * {
+  margin-bottom: 36px; }
+
+.vList > *:last-child {
+  margin-bottom: 0; }
+
+/**
+ * Vertical Rhythm - Vertical rhythm object
+ * .vr
+ */
+.vr_1x {
+  margin-bottom: 4px; }
+
+.vr_2x {
+  margin-bottom: 8px; }
+
+.vr_3x {
+  margin-bottom: 12px; }
+
+.vr_4x {
+  margin-bottom: 16px; }
+
+.vr_5x {
+  margin-bottom: 20px; }
+
+.vr_6x {
+  margin-bottom: 24px; }
+
+.vr_7x {
+  margin-bottom: 28px; }
+
+.vr_8x {
+  margin-bottom: 32px; }
+
+.vr_9x {
+  margin-bottom: 36px; }
+
+.vr_10x {
+  margin-bottom: 40px; }
+
+/**
+ * Wrapper
+ * .wrapper
+ */
+.wrapper {
+  padding: 0 10px;
+  max-width: 960px;
+  margin: 0 auto; }
+
+@media only screen and (min-width: 668px), only print {
+  /**
+ * Grid
+ * .grid
+ */
+  .grid {
+    display: flex;
+    margin: 0 -10px 0 -10px; }
+  .grid-col {
+    flex: 1;
+    padding: 0 10px 0 10px; }
+  .grid-col_1of12 {
+    flex-basis: 8.3333333333%;
+    max-width: 8.3333333333%; }
+  .mix-grid-col_prefix1 {
+    margin-left: 8.3333333333%; }
+  .grid-col_2of12 {
+    flex-basis: 16.6666666667%;
+    max-width: 16.6666666667%; }
+  .mix-grid-col_prefix2 {
+    margin-left: 16.6666666667%; }
+  .grid-col_3of12 {
+    flex-basis: 25%;
+    max-width: 25%; }
+  .mix-grid-col_prefix3 {
+    margin-left: 25%; }
+  .grid-col_4of12 {
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%; }
+  .mix-grid-col_prefix4 {
+    margin-left: 33.3333333333%; }
+  .grid-col_5of12 {
+    flex-basis: 41.6666666667%;
+    max-width: 41.6666666667%; }
+  .mix-grid-col_prefix5 {
+    margin-left: 41.6666666667%; }
+  .grid-col_6of12 {
+    flex-basis: 50%;
+    max-width: 50%; }
+  .mix-grid-col_prefix6 {
+    margin-left: 50%; }
+  .grid-col_7of12 {
+    flex-basis: 58.3333333333%;
+    max-width: 58.3333333333%; }
+  .mix-grid-col_prefix7 {
+    margin-left: 58.3333333333%; }
+  .grid-col_8of12 {
+    flex-basis: 66.6666666667%;
+    max-width: 66.6666666667%; }
+  .mix-grid-col_prefix8 {
+    margin-left: 66.6666666667%; }
+  .grid-col_9of12 {
+    flex-basis: 75%;
+    max-width: 75%; }
+  .mix-grid-col_prefix9 {
+    margin-left: 75%; }
+  .grid-col_10of12 {
+    flex-basis: 83.3333333333%;
+    max-width: 83.3333333333%; }
+  .mix-grid-col_prefix10 {
+    margin-left: 83.3333333333%; }
+  .grid-col_11of12 {
+    flex-basis: 91.6666666667%;
+    max-width: 91.6666666667%; }
+  .mix-grid-col_prefix11 {
+    margin-left: 91.6666666667%; }
+  .grid-col_12of12 {
+    flex-basis: 100%;
+    max-width: 100%; }
+  .mix-grid-col_prefix12 {
+    margin-left: 100%; }
+  .mix-grid-col_reorder1 {
+    order: 1; }
+  .mix-grid-col_reorder2 {
+    order: 2; }
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px; } }
